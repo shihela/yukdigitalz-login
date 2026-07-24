@@ -1,0 +1,74 @@
+<svg xmlns="http://w3.org" viewBox="0 0 1544 500" width="100%" height="100%">
+    <defs>
+        <!-- Premium Tech Gradient Background -->
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0D47A1" />
+            <stop offset="50%" stop-color="#1565C0" />
+            <stop offset="100%" stop-color="#1A237E" />
+        </linearGradient>
+        
+        <!-- Google Brand Color Gradients for the abstract accent shapes -->
+        <linearGradient id="googleRed" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#EA4335" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#EA4335" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Background Layer -->
+    <rect width="1544" height="500" fill="url(#bgGradient)" />
+
+    <!-- Abstract Geometric Tech Background Patterns (Right Aligned) -->
+    <path d="M 1100,-100 L 1600,200 L 1600,-100 Z" fill="url(#googleRed)" />
+    <circle cx="1350" cy="250" r="180" fill="#4285F4" opacity="0.1" />
+    <circle cx="1420" cy="180" r="120" fill="#34A853" opacity="0.08" />
+    <circle cx="1280" cy="320" r="90" fill="#FBBC05" opacity="0.05" />
+
+    <!-- Decorative Grid Overlay for Tech Vibe -->
+    <path d="M 0,100 L 1544,100 M 0,200 L 1544,200 M 0,300 L 1544,300 M 0,400 L 1544,400 M 300,0 L 300,500 M 600,0 L 600,500 M 900,0 L 900,500 M 1200,0 L 1200,500" stroke="#FFFFFF" stroke-width="1" opacity="0.03" />
+
+    <!-- LEFT SIDE CONTENT GROUP (Text Content & Hierarchy) -->
+    <g transform="translate(100, 0)">
+        
+        <!-- Authorship Branding Tag -->
+        <text x="0" y="130" font-family="'Inter', 'Roboto', 'Helvetica', sans-serif" font-size="24" font-weight="600" fill="#90CAF9" letter-spacing="2">
+            BY YUKDIGITALZ.COM
+        </text>
+
+        <!-- Main Product Title -->
+        <text x="0" y="210" font-family="'Inter', 'Roboto', 'Helvetica', sans-serif" font-size="64" font-weight="800" fill="#FFFFFF" letter-spacing="-1">
+            Google Login
+        </text>
+        <text x="0" y="280" font-family="'Inter', 'Roboto', 'Helvetica', sans-serif" font-size="44" font-weight="500" fill="#E3F2FD">
+            for WooCommerce
+        </text>
+
+        <!-- Mockup Text String (Value Proposition Banner Tag) -->
+        <g transform="translate(0, 340)">
+            <!-- Pill Badge Background -->
+            <rect width="460" height="48" rx="24" fill="#34A853" opacity="0.2" stroke="#34A853" stroke-width="2"/>
+            <!-- Pill Badge Icon (Checkmark) -->
+            <path d="M 24,24 L 30,30 L 40,18" stroke="#34A853" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <!-- Pill Badge Text -->
+            <text x="54" y="31" font-family="'Inter', 'Roboto', 'Helvetica', sans-serif" font-size="18" font-weight="700" fill="#A3E635" letter-spacing="0.5">
+                INSTANT ONE-CLICK EXPRESS CHECKOUT
+            </text>
+        </g>
+    </g>
+
+    <!-- RIGHT SIDE CONTENT GROUP (Visual Security Interface Mockup) -->
+    <g transform="translate(1050, 160)">
+        <!-- Safe Glassmorphism Container Shield -->
+        <rect width="380" height="180" rx="24" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-width="1" />
+        <rect x="1" y="1" width="378" height="178" rx="23" fill="none" stroke="#4285F4" stroke-width="1" opacity="0.3" />
+
+        <!-- Mockup Interface Elements -->
+        <!-- Secured Database Icon Indicator -->
+        <circle cx="60" cy="90" r="28" fill="#4285F4" opacity="0.2" />
+        <path d="M 52,82 L 68,82 M 48,90 L 72,90 M 52,98 L 68,98 M 48,82 C 48,74 72,74 72,82 M 48,82 L 48,98 C 48,106 72,106 72,98 L 72,82" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+        <!-- Text Lines representing automated data insertion -->
+        <rect x="110" y="70" width="200" height="12" rx="6" fill="#FFFFFF" opacity="0.8" />
+        <rect x="110" y="95" width="140" height="12" rx="6" fill="#FFFFFF" opacity="0.5" />
+        <rect x="110" y="120" width="170" height="8" rx="4" fill="#34A853" opacity="0.9" />
+    </g>
+</svg>

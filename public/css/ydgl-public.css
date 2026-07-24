@@ -1,0 +1,157 @@
+/* Styling for WooCommerce Google Sign-In Button and Separator */
+
+.ydgl-google-login-container {
+    margin: 20px 0;
+    width: 100%;
+    clear: both;
+}
+
+/* Elegant line separator "atau" (or) */
+.ydgl-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8c8f94;
+    font-size: 14px;
+}
+
+.ydgl-separator::before,
+.ydgl-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.ydgl-separator:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.ydgl-separator:not(:empty)::after {
+    margin-left: .5em;
+}
+
+/* Premium Google Sign-In button complying with Google Branding Guidelines */
+.ydgl-google-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.ydgl-google-btn:hover {
+    background-color: #f8f9fa;
+    border-color: #c6c6c6;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.ydgl-google-btn:focus {
+    background-color: #ffffff;
+    border-color: #4285f4;
+    outline: none;
+}
+
+.ydgl-google-btn:active {
+    background-color: #f1f3f4;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3);
+}
+
+.ydgl-google-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+
+.ydgl-google-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.ydgl-google-btn-text {
+    color: #3c4043;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+/* Express Checkout Google Login Promo Banner */
+.ydgl-checkout-promo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    gap: 16px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
+}
+
+.ydgl-checkout-promo-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.ydgl-checkout-promo-icon {
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.ydgl-checkout-promo-text strong {
+    display: block;
+    font-size: 16px;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.ydgl-checkout-promo-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+.ydgl-checkout-promo-btn-wrapper {
+    flex-shrink: 0;
+    width: auto;
+    min-width: 200px;
+}
+
+.ydgl-checkout-btn {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+    .ydgl-checkout-promo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .ydgl-checkout-promo-btn-wrapper {
+        width: 100%;
+    }
+}
+

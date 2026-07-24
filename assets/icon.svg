@@ -1,0 +1,30 @@
+<svg xmlns="http://w3.org" viewBox="0 0 256 256" width="100%" height="100%">
+    <!-- Smooth Rounded Background (YukDigitalz Corporate Blue) -->
+    <rect width="256" height="256" rx="64" fill="#1E88E5"/>
+
+    <!-- Security/Authentication White Shield Base -->
+    <circle cx="128" cy="128" r="76" fill="#FFFFFF"/>
+
+    <!-- Google & WooCommerce Hybrid Concept Icon Group -->
+    <g transform="translate(68, 68)">
+        <!-- Google Top Left Red Arc -->
+        <path d="M 60,0 C 41,0 23,8 11,21 L 24,32 C 33,24 46,19 60,19 C 78,19 94,28 103,42 L 118,30 C 106,12 84,0 60,0 Z" fill="#EA4335"/>
+        
+        <!-- Google Bottom Left Yellow Arc (Blended with Cart Wheel Base) -->
+        <path d="M 11,21 C 4,30 0,42 0,55 C 0,68 4,80 11,89 L 24,78 C 20,72 18,64 18,55 C 18,46 20,38 24,32 L 11,21 Z" fill="#FBBC05"/>
+        
+        <!-- Google/WooCommerce Cart Bottom Green Arc -->
+        <path d="M 11,89 C 23,102 41,110 60,110 C 85,110 106,97 117,77 L 102,66 C 94,80 78,89 60,89 C 46,89 33,84 24,75 L 11,89 Z" fill="#34A853"/>
+        
+        <!-- Google Blue Element Morphed into a WooCommerce Shopping Cart Handle & Basket -->
+        <path d="M 60,35 C 71,35 80,39 87,46 L 101,32 C 90,22 76,16 60,16 C 36,16 16,30 7,50 L 23,60 C 27,45 42,35 60,35 Z" fill="#4285F4"/>
+        
+        <!-- WooCommerce Shopping Cart Details (Grid & Wheel Points) Layered Over the Structure -->
+        <!-- Front Wheel -->
+        <circle cx="45" cy="85" r="9" fill="#1E88E5"/>
+        <!-- Rear Wheel -->
+        <circle cx="85" cy="85" r="9" fill="#1E88E5"/>
+        <!-- Cart Basket Lines inside the white space -->
+        <path d="M 35,45 L 85,45 M 40,58 L 80,58 M 45,40 L 40,65 M 75,40 L 80,65" stroke="#1E88E5" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    </g>
+</svg>
