@@ -37,8 +37,8 @@ class YDGL_Logger {
 					break;
 			}
 		} else {
-			// Fail-safe default php error log.
-			// phpcs:ignore
+			// Fail-safe default PHP error log when WooCommerce logger is unavailable.
+			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log -- Fallback audit log when WC logger is unavailable.
 			error_log( sprintf( '[YDGL - %s] %s', strtoupper( $level ), $message ) );
 		}
 	}

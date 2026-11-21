@@ -1,4 +1,4 @@
-/* Styling for WooCommerce Google Sign-In Button and Separator */
+/* Styling for WooCommerce Google Sign-In Button, Express Checkout Banner & Account Connection */
 
 .ydgl-google-login-container {
     margin: 20px 0;
@@ -6,7 +6,7 @@
     clear: both;
 }
 
-/* Elegant line separator "atau" (or) */
+/* Line separator ("or") */
 .ydgl-separator {
     display: flex;
     align-items: center;
@@ -31,13 +31,14 @@
     margin-left: .5em;
 }
 
-/* Premium Google Sign-In button complying with Google Branding Guidelines */
+/* Google Sign-In button complying with Google Branding Guidelines */
 .ydgl-google-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 44px;
+    padding: 0 16px;
     background-color: #ffffff;
     border: 1px solid #dadce0;
     border-radius: 4px;
@@ -52,18 +53,52 @@
 .ydgl-google-btn:hover {
     background-color: #f8f9fa;
     border-color: #c6c6c6;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
 }
 
 .ydgl-google-btn:focus {
     background-color: #ffffff;
     border-color: #4285f4;
-    outline: none;
+    outline: 2px solid rgba(66, 133, 244, 0.35);
+    outline-offset: 1px;
 }
 
 .ydgl-google-btn:active {
     background-color: #f1f3f4;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3);
+}
+
+/* Official Google Sign-In Theme Presets: Dark & Neutral */
+.ydgl-google-btn.ydgl-theme-dark {
+    background-color: #131314;
+    border-color: #8e918f;
+}
+
+.ydgl-google-btn.ydgl-theme-dark .ydgl-google-btn-text {
+    color: #e3e3e3;
+}
+
+.ydgl-google-btn.ydgl-theme-dark:hover {
+    background-color: #1f1f21;
+    border-color: #c4c7c5;
+}
+
+.ydgl-google-btn.ydgl-theme-dark:active {
+    background-color: #2b2b2e;
+}
+
+.ydgl-google-btn.ydgl-theme-neutral {
+    background-color: #f2f2f2;
+    border-color: #dadce0;
+}
+
+.ydgl-google-btn.ydgl-theme-neutral .ydgl-google-btn-text {
+    color: #1f1f1f;
+}
+
+.ydgl-google-btn.ydgl-theme-neutral:hover {
+    background-color: #e8e8e8;
+    border-color: #c6c6c6;
 }
 
 .ydgl-google-icon-wrapper {
@@ -73,6 +108,7 @@
     width: 18px;
     height: 18px;
     margin-right: 12px;
+    flex-shrink: 0;
 }
 
 .ydgl-google-icon {
@@ -91,7 +127,7 @@
     vertical-align: middle;
 }
 
-/* Express Checkout Google Login Promo Banner */
+/* Express Checkout Google Login Promo Banner (Classic & Block Checkout) */
 .ydgl-checkout-promo {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +139,7 @@
     padding: 16px 20px;
     margin-bottom: 24px;
     gap: 16px;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 .ydgl-checkout-promo-content {
@@ -111,7 +147,7 @@
     align-items: flex-start;
     gap: 12px;
     flex: 1;
-    min-width: 280px;
+    min-width: 240px;
 }
 
 .ydgl-checkout-promo-icon {
@@ -141,17 +177,59 @@
 }
 
 .ydgl-checkout-btn {
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Connected Google Account Card on My Account > Account Details */
+.ydgl-account-connection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 16px 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.ydgl-account-connection-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+    min-width: 240px;
+}
+
+.ydgl-account-connection-info strong {
+    display: block;
+    font-size: 15px;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.ydgl-account-connection-info p {
+    margin: 0;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.45;
+}
+
+.ydgl-account-connection-action {
+    flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
-    .ydgl-checkout-promo {
+    .ydgl-checkout-promo,
+    .ydgl-account-connection {
         flex-direction: column;
         align-items: stretch;
     }
-    
-    .ydgl-checkout-promo-btn-wrapper {
+
+    .ydgl-checkout-promo-btn-wrapper,
+    .ydgl-account-connection-action .ydgl-disconnect-btn {
         width: 100%;
+        text-align: center;
     }
 }
-
